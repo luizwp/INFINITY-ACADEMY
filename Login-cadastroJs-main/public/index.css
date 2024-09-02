@@ -1,0 +1,89 @@
+body {
+    background-color: #6c6ce6;
+}
+.form {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    color: #ae8ff8;
+    flex-shrink: 0;
+    border-radius: 6px;
+    box-shadow: 0 0 7px;
+
+    display: flexbox;
+    margin-top: 10px;
+    margin-left: 450px;
+    width: 30%;
+    height: 640px;
+    color: #000000;
+    flex-shrink: 0;
+    border-radius: 6px;
+    box-shadow: 0 0 7px;
+    background-color: #6767f13d;
+    
+
+}
+input, button {
+
+    opacity: 100;
+    transform: translateX(-0%);
+    transition: all 2.5s ;
+    filter: blur(30pxpx);
+
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #bebebe;
+    display: flex;
+    width: 346px;
+    height: 35px;
+    padding: 0px 15px;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 7px #000000;
+    border: 1px solid var(--Gray-2, #444444)
+}
+
+
+button {
+    margin-left: 110px;
+    width: 16em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 0 7px #000000;
+}
+button::before {
+    content: '';
+    width: 0;
+    height: 5em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #650ec9 0%, #6F5FE7 100%) ;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+button:hover::before {
+    width: 10em;
+}
+
+.text {
+    color: #030303;
+    align-items: center;
+    justify-content: center;
+    
+}
+h1 {
+    color: #FFF ;
+    
+}
